@@ -217,7 +217,9 @@ nav ul li {
 /* Contacts section */
 .contact {
   margin-top: 2rem;
+  text-align: center;
 }
+
 
 .contact h2 {
   text-align: center;
@@ -279,21 +281,19 @@ nav ul li {
 /* Contacts section ends */
 
 /* Social buttons */
+
+
 .socials {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px 0;
 }
 
 .socicon {
-  margin-bottom: 10px;
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
 }
-/* Social button ends */
-
 /* Scroll to top button */
 .scroll-up {
   position: fixed;
