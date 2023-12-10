@@ -280,16 +280,17 @@ nav ul li {
 
 /* Social buttons */
 .socials {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
+  align-items: center;
 }
 
 .socicon {
-  width: 2rem;
-  height: 2rem;
+  margin-bottom: 10px;
 }
 /* Social button ends */
 
@@ -305,6 +306,11 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
+
+
+
+
+
 /* Scroll to top button ends */
 
 /* Footer section */
