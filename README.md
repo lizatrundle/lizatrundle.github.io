@@ -1,4 +1,5 @@
 # lizatrundle.github.io
 https://lizatrundle.github.io/ 
 
-Personalized website :)
+My personal portfolio website! 
+Made with HTML, CSS, and JavaScript
