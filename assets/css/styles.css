@@ -6,7 +6,8 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  --bg-color: #000; /* Updated to black */
+  --text-color: #fff; /* Updated to white */
   --primary-color: #4756df;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
@@ -69,11 +70,11 @@ nav {
 }
 
 nav h1 {
-  color: var(--primary-color);
+  color: var(--text-color); 
 }
 
 nav a {
-  color: var(--primary-color);
+  color: var(--text-color); /* Updated to white */
   transition: var(--transition);
 }
 nav a:hover {
@@ -287,6 +288,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--text-color); 
 }
 
 .socicon {
@@ -300,13 +302,15 @@ nav ul li {
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
-}
+  color: var(--text-color); /* Updated to white */
+  }
 
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
-}
 
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--text-color); /* Updated to white */
+  }
 
 
 
@@ -325,6 +329,7 @@ footer {
 /* General (utilities) */
 .icon-card {
   background-color: #fff;
+  color: var(--text-color); /* Text color for icon cards (white) */
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
@@ -337,6 +342,7 @@ footer {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  color: var(--text-color); 
 }
 
 /* Media queries for responsiveness */
