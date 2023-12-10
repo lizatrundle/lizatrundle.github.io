@@ -122,12 +122,6 @@ nav ul li {
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
-.bio-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .bio h1 {
   margin-bottom: var(--bottom-margin);
 }
