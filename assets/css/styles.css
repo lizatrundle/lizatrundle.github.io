@@ -288,11 +288,15 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* color: var(--text-color);  */
 }
 
-.socicon {
+/* Adjusted styling for socicon in the context of combined section */
+.socials .socicon {
   margin-bottom: 10px;
+  border: 2px solid var(--primary-color);
+  padding: 5px; /* Add padding for better visibility and click area */
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer;
 }
 /* Social button ends */
 
