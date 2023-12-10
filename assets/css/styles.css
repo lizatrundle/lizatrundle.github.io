@@ -291,7 +291,7 @@ nav ul li {
 }
 
 /* Adjusted styling for socicon in the context of combined section */
-.socials .socicon {
+.socicon {
   margin-bottom: 10px;
   border: 2px solid var(--primary-color);
   padding: 5px; /* Add padding for better visibility and click area */
