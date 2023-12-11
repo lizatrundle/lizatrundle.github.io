@@ -95,7 +95,7 @@ nav ul {
 nav ul li {
   font-weight: var(--bold-font);
   font-size: 1.2rem;
-  
+
 }
 
 .burger-menu {
@@ -119,8 +119,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 33rem;
+  width: 30rem;
 }
 
 .bio {
