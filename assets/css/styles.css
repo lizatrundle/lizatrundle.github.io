@@ -50,7 +50,7 @@ body {
 }
 
 section {
-  margin-bottom: 40px; /* Adjust the margin-bottom as needed */
+  margin-bottom: 60px; /* Adjust the margin-bottom as needed */
 }
 
 /* CSS Resets end */
@@ -119,8 +119,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 33rem;
-  width: 28rem;
+  height: 37rem;
+  width: 33rem;
 }
 
 .bio {
@@ -143,7 +143,7 @@ nav ul li {
 /* More about */
 .more-about {
  
-  margin-top: 50px; /* You can adjust the value to control the amount of white space */
+  margin-top: 80px; /* You can adjust the value to control the amount of white space */
 
   text-align: center;
 }
@@ -362,11 +362,11 @@ footer {
     margin-top: -7rem;
     width: 20.5rem;
   }
-
+/* 
   .more-about {
-    margin-top: 2rem;
+    margin-top: 8rem;
     padding: 1rem 3.5rem;
-  }
+  } */
 
   .more-about h2 {
     text-align: center;
