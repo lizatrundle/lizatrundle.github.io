@@ -71,6 +71,11 @@ nav {
 
 nav h1 {
   color: var(--primary-color);
+  font-size: 36px;
+  color: black; /* Set the text color to black */
+ 
+
+  
 }
 
 nav a {
