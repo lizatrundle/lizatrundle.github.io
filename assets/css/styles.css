@@ -45,11 +45,12 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  margin: 20px;
+  
 }
 
 section {
-  /* max-width: 1100px;
-  margin: auto; */
+  margin-bottom: 40px; /* Adjust the margin-bottom as needed */
 }
 
 /* CSS Resets end */
