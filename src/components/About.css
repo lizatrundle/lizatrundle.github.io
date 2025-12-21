@@ -1,11 +1,11 @@
 .about {
-  padding: 3rem 0;
+  padding: 5rem 0;
   background: transparent;
   position: relative;
 }
 
 .profile-photo {
-  width: 250px;
+  width: 310px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
