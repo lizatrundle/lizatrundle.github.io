@@ -1,0 +1,246 @@
+.experience {
+  padding: 3rem 0;
+  background: transparent;
+  position: relative;
+}
+
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 700;
+}
+
+.skills-section {
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.skills-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.skill-category h4 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 600;
+  min-width: 180px;
+  margin: 0;
+}
+
+.skill-category p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--text-secondary);
+  box-shadow: var(--glow), var(--shadow);
+  background: var(--bg-tertiary);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.experience-card .company {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: 500;
+}
+
+.experience-card .dates {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.experience-card .location {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-card .description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.responsibilities-section {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-section,
+.highlights-section,
+.certifications-section {
+  margin-top: 1rem;
+}
+
+.section-label {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.highlights-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlights-list li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.skills-used {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.skills-label {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--text-dark);
+  color: var(--text-secondary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-secondary);
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience-card .dates {
+    white-space: normal;
+  }
+
+  .experience-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .skill-tag {
+    font-size: 0.75rem;
+  }
+
+  .skill-category {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .skill-category h4 {
+    font-size: 1rem;
+    min-width: auto;
+  }
+
+  .skill-category p {
+    font-size: 0.95rem;
+  }
+}
+
