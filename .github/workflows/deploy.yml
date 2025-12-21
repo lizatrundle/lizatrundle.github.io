@@ -35,8 +35,19 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Add .nojekyll
-        run: touch ./dist/.nojekyll
+      - name: Add .nojekyll and copy 404.html
+        run: |
+          touch ./dist/.nojekyll
+          if [ -f ./public/404.html ]; then
+            cp ./public/404.html ./dist/404.html
+          fi
+      
+      - name: Verify build output
+        run: |
+          echo "Build output contents:"
+          ls -la ./dist/
+          echo "Index.html content:"
+          head -15 ./dist/index.html
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
