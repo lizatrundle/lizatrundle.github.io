@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
+      - name: Clean dist folder
+        run: rm -rf dist
+      
       - name: Build
         run: npm run build
       
@@ -45,12 +48,18 @@ jobs:
           echo "Build output contents:"
           ls -la ./dist/
           echo "Index.html content:"
-          head -15 ./dist/index.html
+          cat ./dist/index.html
+          echo ""
+          echo "Checking for .jsx files in dist:"
+          find ./dist -name "*.jsx" || echo "No .jsx files found (good!)"
+          echo "Checking for .js files in dist:"
+          find ./dist -name "*.js" | head -5
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          keep_files: false
           cname: false
 
