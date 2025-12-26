@@ -80,6 +80,32 @@
   text-decoration: underline;
 }
 
+.hobbies-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hobby-image {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.hobby-image:hover {
+  border-color: var(--text-secondary);
+  box-shadow: var(--glow), var(--shadow);
+  transform: translateY(-5px);
+}
+
 .to-finish {
   color: var(--text-secondary);
   font-style: italic;
@@ -93,6 +119,14 @@
 
   .art-description {
     font-size: 1rem;
+  }
+
+  .hobbies-images {
+    gap: 1rem;
+  }
+
+  .hobby-image {
+    max-width: 240px;
   }
 }
 
