@@ -16,8 +16,8 @@ function BeyondCode() {
         <div className="hobbies-section">
           <h3>Hobbies & Interests</h3>
           <p className="hobbies-description">
-            In my free time, I enjoy spending time outdoors, hiking, reading, skiing,listening to music, watching movies, and exploring new restaurants in NYC. 
-            Check out my <a href="https://boxd.it/gkzc7" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Letterboxd</a> to see what I've been watching, my <a href="https://www.goodreads.com/user/show/176595574-liza-trundle" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Goodreads</a> to see what I've been reading, and my Beli (username lizatrundle) to see what I've been eating!
+            In my free time, I enjoy spending time with friends and family, getting outdoors, hiking, skiing, traveling, reading, going to the gym, going for walks, listening to music, watching movies, and exploring NYC and all it has to offer. 
+            Check out my <a href="https://boxd.it/gkzc7" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Letterboxd</a> to see what I've been watching, my <a href="https://www.goodreads.com/user/show/176595574-liza-trundle" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Goodreads</a> to see what I've been reading, my <a href="https://open.spotify.com/user/lizatrundle?si=6da88368439a469b" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Spotify</a> to see what I'm listening to, and my <a href="https://beliapp.com/" target="_blank" rel="noopener noreferrer" className="letterboxd-link">Beli</a> (@lizatrundle) to see what I've been eating!
           </p>
           <div className="hobbies-images">
             <img src="/image1.JPG" alt="Hobby image 1" className="hobby-image" />
