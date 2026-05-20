@@ -12,15 +12,20 @@ function Experience() {
       location: "New York, New York, United States · On-site",
       description: "Forensic Litigation and Consulting Department, Data & Analytics Software Solutions Team",
       responsibilities: [
-        "Work on 30-person Agile team—FTI's only internal software engineering group—building customized web applications for internal and external clients in a startup-like environment with high autonomy and ownership",
-        "Deliver full-stack features across two major projects: internal AI platform serving 8,000+ employees with multi-tenant architecture (document analysis, expert matching, compliance verification) and custom external client solution",
-        "Led AWS production/UAT deployments; implemented WebSocket/SQS features, recursive data structures, deep research and streaming processes; integrated new frameworks into legacy codebase; conducted code reviews and maintained direct client communication",
-        "Serve on UX and recruiting taskforces; designed 10+ web pages in Figma for site redesign, led technical workshops, and attended Figma Config conference"
+        "Part of a 30-person Agile team—FTI's only internal engineering group—building web apps for internal and external clients with strong autonomy and ownership",
+        "Build full-stack features across three projects at once: an internal AI platform used by 8,000+ employees and two external client apps, working in Angular, Laravel, and React",
+        "Handle AWS UAT/production deployments using Terraform; debug with CloudWatch, work with S3 and Amazon Bedrock, and cover deployments for the London team across time zones",
+        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude—Skills, deep research, extended thinking, streaming responses, observability messages, and progress-bar loading states",
+        "Built core features end to end across projects—a multi-phase data retention policy with cascade logic and a real-time deal upload with live progress tracking (custom file parser with status updates streamed to the frontend)",
+        "Write SQL queries and scripts, run data analysis, and work with Excel data to support feature development and data accuracy",
+        "Cleaned up and modernized an older codebase with shared components and state services; review code and stay in direct contact with clients",
+        "Help run UX, documentation, and learning taskforces—designed 10+ Figma pages for a site redesign, led workshops, and run a biweekly team learning series"
       ],
       certifications: [
-        "Public Speaking, Project Management, and Figma courses"
+        "Led Lightning Talks taskforce—organized speakers, introduced new topics, and hosted sessions",
+        "Professional development: Public Speaking, Project Management, and Figma courses"
       ],
-      skills: ["SQL", "Laravel", "Angular", "React", "AWS", "Figma", "Gitlab", "WebSockets", "SQS", "Reverb"]
+      skills: ["SQL", "Laravel", "Angular", "React", "AWS", "Terraform", "Bedrock", "Figma", "Excel","Gitlab", "WebSockets", "SQS", "Reverb", "Model Prompting"]
     },
     {
       id: 2,
@@ -82,7 +87,7 @@ function Experience() {
           <div className="skills-list">
             <div className="skill-category">
               <h4>Languages:</h4>
-              <p>Python, JavaScript, TypeScript, Java, C++, SQL, HTML/CSS, R</p>
+              <p>JavaScript, SQL, Python,TypeScript, C++, HTML/CSS, R</p>
             </div>
             <div className="skill-category">
               <h4>Frameworks & Libraries:</h4>
@@ -90,7 +95,7 @@ function Experience() {
             </div>
             <div className="skill-category">
               <h4>Tools & Platforms:</h4>
-              <p>Git, AWS, Google Cloud Platform, MongoDB, Docker, Figma, Adobe Photoshop/Illustrator, Launch Darkly, Filament, WebSockets, Tableau, Xcode, FastAPI, AI tools</p>
+              <p>Git, AWS (Bedrock, S3, CloudWatch, SQS), Terraform, Docker, WebSockets, Filament, Launch Darkly, Pest, FastAPI, Figma, Excel, Outlook,Adobe Photoshop/Illustrator, Tableau, Xcode, Google Cloud Platform, MongoDB</p>
             </div>
           </div>
         </div>
