@@ -15,11 +15,11 @@ function Experience() {
         "Part of a 30-person Agile team—FTI's only internal engineering group—building web apps for internal and external clients with strong autonomy and ownership",
         "Build full-stack features across three projects at once: an internal AI platform used by 8,000+ employees and two external client apps, working in Angular, Laravel, and React",
         "Handle AWS UAT/production deployments using Terraform; debug with CloudWatch, work with S3 and Amazon Bedrock, and cover deployments for the London team across time zones",
-        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude—Skills, deep research, extended thinking, streaming responses, observability messages, and progress-bar loading states",
+        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude: Skills, deep research, extended thinking, streaming responses, observability messages, and progress-bar loading states",
         "Built core features end to end across projects—a multi-phase data retention policy with cascade logic and a real-time deal upload with live progress tracking (custom file parser with status updates streamed to the frontend)",
         "Write SQL queries and scripts, run data analysis, and work with Excel data to support feature development and data accuracy",
         "Cleaned up and modernized an older codebase with shared components and state services; review code and stay in direct contact with clients",
-        "Help run UX, documentation, and learning taskforces—designed 10+ Figma pages for a site redesign, led workshops, and run a biweekly team learning series"
+        "Help run UX, documentation, and learning taskforces: designed 10+ Figma pages for a site redesign, led workshops, and run a biweekly team learning series"
       ],
       certifications: [
         "Led Lightning Talks taskforce—organized speakers, introduced new topics, and hosted sessions",
