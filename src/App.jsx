@@ -14,9 +14,9 @@ function App() {
       <Header />
       <main>
         <About />
-        <Education />
         <Experience />
         <Projects />
+        <Education />
         <BeyondCode />
         <Contact />
       </main>

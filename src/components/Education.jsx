@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Education.css'
 
 function Education() {
+  const [openCards, setOpenCards] = useState(new Set())
+
+  const toggleCard = (id) => {
+    setOpenCards(prev => {
+      const next = new Set(prev)
+      next.has(id) ? next.delete(id) : next.add(id)
+      return next
+    })
+  }
+
   const education = [
     {
       id: 1,
@@ -53,51 +63,66 @@ function Education() {
       <div className="container">
         <h2>Education</h2>
         <div className="education-list">
-          {education.map(edu => (
-            <div key={edu.id} className="education-card">
-              <h3>{edu.school}</h3>
-              <p className="degree">{edu.degree}</p>
-              <p className="dates">{edu.dates}</p>
-              {edu.description && <p className="description">{edu.description}</p>}
-              {(edu.gpa || edu.testScores || edu.apScores) && (
-                <div className="scores">
-                  <p className="scores-label">Scores:</p>
-                  <ul className="scores-list">
-                    {edu.gpa && <li>GPA: {edu.gpa}</li>}
-                    {edu.testScores && <li>{edu.testScores}</li>}
-                    {edu.apScores && <li>{edu.apScores}</li>}
-                  </ul>
-                </div>
-              )}
-              {edu.activities && (
-                <div className="activities">
-                  <p className="activities-label">Activities:</p>
-                  <p className="activities-text">{edu.activities}</p>
-                </div>
-              )}
-              {edu.projects && (
-                <div className="projects">
-                  <p className="projects-label">Notable Projects:</p>
-                  <ul className="projects-list">
-                    {edu.projects.map((project, index) => (
-                      <li key={index}>{project}</li>
-                    ))}
-                  </ul>
-                  <a href="#projects" className="projects-link" style={{ display: 'inline-block', marginTop: '8px', color: '#7dd3fc', textDecoration: 'none', fontWeight: '500' }}>See specific linked projects below →</a>
-                </div>
-              )}
-              {edu.coursework && (
-                <div className="coursework">
-                  <p className="coursework-label">Relevant Coursework:</p>
-                  <div className="coursework-grid">
-                    {edu.coursework.map((course, index) => (
-                      <span key={index} className="course-item">{course}</span>
-                    ))}
+          {education.map(edu => {
+            const isOpen = openCards.has(edu.id)
+            return (
+              <div
+                key={edu.id}
+                className={`education-card${isOpen ? ' expanded' : ''}`}
+                onClick={() => toggleCard(edu.id)}
+              >
+                <div className="education-header">
+                  <div>
+                    <h3>{edu.school}</h3>
+                    <p className="degree">{edu.degree}</p>
+                  </div>
+                  <div className="header-right">
+                    <p className="dates">{edu.dates}</p>
+                    <span className={`toggle-icon${isOpen ? ' open' : ''}`}>❯</span>
                   </div>
                 </div>
-              )}
-            </div>
-          ))}
+
+                {isOpen && (
+                  <div className="card-body">
+                    {edu.description && <p className="description">{edu.description}</p>}
+                    {(edu.gpa || edu.testScores || edu.apScores) && (
+                      <div className="scores">
+                        <p className="scores-label">Scores:</p>
+                        <ul className="scores-list">
+                          {edu.gpa && <li>GPA: {edu.gpa}</li>}
+                          {edu.testScores && <li>{edu.testScores}</li>}
+                          {edu.apScores && <li>{edu.apScores}</li>}
+                        </ul>
+                      </div>
+                    )}
+                    {edu.activities && (
+                      <div className="activities">
+                        <p className="activities-label">Activities:</p>
+                        <p className="activities-text">{edu.activities}</p>
+                      </div>
+                    )}
+                    {edu.projects && (
+                      <div className="projects">
+                        <p className="activities-label">Notable Projects:</p>
+                        <p className="activities-text">{edu.projects[0]}</p>
+                        <a href="#projects" className="projects-link" style={{ display: 'inline-block', marginTop: '8px', color: '#7dd3fc', textDecoration: 'none', fontWeight: '500' }}>More linked projects above</a>
+                      </div>
+                    )}
+                    {edu.coursework && (
+                      <div className="coursework">
+                        <p className="coursework-label">Relevant Coursework:</p>
+                        <div className="coursework-grid">
+                          {edu.coursework.map((course, index) => (
+                            <span key={index} className="course-item">{course}</span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
