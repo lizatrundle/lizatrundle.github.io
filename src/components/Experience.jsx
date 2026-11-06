@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Experience.css'
 
 function Experience() {
-  const [openCards, setOpenCards] = useState(new Set())
+  const [openCards, setOpenCards] = useState(new Set([1]))
 
   const toggleCard = (id) => {
     setOpenCards(prev => {
@@ -16,34 +16,35 @@ function Experience() {
     {
       id: 1,
       company: "FTI Consulting",
-      role: "Software Developer",
+      role: "Software Developer II",
       type: "Full-time",
       dates: "Aug 2024 - Present",
       location: "New York, New York, United States · On-site",
-      description: "Forensic Litigation and Consulting Department, Data & Analytics Software Solutions Team",
+      description: "Data & Analytics Software Solutions team. FTI's only internal engineering group (30 people), working like a startup: engineers work directly with stakeholders and own features from request to production.",
       responsibilities: [
         "Part of a 30-person Agile team—FTI's only internal engineering group—building web apps for internal and external clients with strong autonomy and ownership",
         "Build full-stack features across three projects at once: an internal AI platform used by 8,000+ employees, plus two external client applications",
+        "Own features end to end: requirements, UX design, architecture, build, release, and post-launch support",
         "Architected multi-tenancy layers enabling platform reuse across projects, with data isolation and governance built in",
-        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude: Skills, deep research, extended thinking, streaming responses, observability messages, and progress-bar loading states",
+        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude: Skills, deep research, extended thinking, streaming responses (SSE relayed to the browser over WebSockets), observability messages, and progress-bar loading states",
         "Serve as primary AWS point of contact — handle UAT/production deployments, debug through CloudWatch logs and direct database queries, and cover deployments for the London team across time zones",
-        "Conduct code reviews, attend client meetings with direct client contact, and serve on UX, documentation, and learning taskforces — designed 10+ Figma pages for a site redesign, run a biweekly internal team learning series"
+        "Conduct code reviews, lead client meetings and live demos with direct client contact, and serve on UX, documentation, and learning taskforces — designed 10+ Figma pages for a site redesign, run a biweekly internal team learning series"
       ],
       architecture: [
-        { label: "Backend", value: "Laravel (PHP), RESTful APIs", icon: "ti-server" },
-        { label: "Frontend", value: "Angular, React", icon: "ti-device-desktop" },
-        { label: "Hosting", value: "AWS (EC2, S3, SQS) — infrastructure managed with Terraform", icon: "ti-cloud" },
-        { label: "AI / LLM", value: "Amazon Bedrock, async query processing", icon: "ti-brain" },
-        { label: "Data & caching", value: "MySQL, PostgreSQL, Redis (cache, sessions, pub/sub)", icon: "ti-database" },
-        { label: "Real-time", value: "WebSockets via Laravel Reverb", icon: "ti-bolt" }
+        { label: "Backend", value: "Laravel (PHP), RESTful APIs, queued jobs", icon: "ti-server" },
+        { label: "Frontend", value: "Angular (NgRx), React", icon: "ti-device-desktop" },
+        { label: "Hosting", value: "AWS: ECS Fargate, ALB, S3, SQS, RDS. Infrastructure as code with Terraform and GitLab CI", icon: "ti-cloud" },
+        { label: "AI / LLM", value: "Amazon Bedrock-backed models via internal service layer; responses streamed over server-sent events (SSE), async processing for long jobs", icon: "ti-brain" },
+        { label: "Data & caching", value: "MySQL, PostgreSQL, Redis (cache, sessions, locks, pub/sub)", icon: "ti-database" },
+        { label: "Real-time", value: "WebSockets via Laravel Reverb, SQS-driven progress updates", icon: "ti-bolt" }
       ],
       certifications: [
-        "Led Lightning Talks taskforce—organized speakers, introduced new topics, and hosted sessions",
+        "Led the Lightning Talks taskforce: organized speakers, introduced topics, and hosted sessions",
         "Professional development: Public Speaking, Project Management, and Figma courses",
         "How To Modernize Legacy UX (Without Breaking Everything)",
-        "AWS Skills Centers: Becoming an AI Practitioner - Part 1 - Introduction to AI (July 2026)"
+        "AWS Skills Centers: Becoming an AI Practitioner, Part 1 - Introduction to AI"
       ],
-      skills: ["SQL", "Laravel", "Angular", "React", "AWS", "Terraform", "Bedrock", "Figma", "Excel","Gitlab", "WebSockets", "SQS", "Reverb", "Model Prompting", "Redis"]
+      skills: ["Laravel", "Angular", "React", "SQL", "AWS", "Terraform", "Bedrock", "WebSockets", "SQS", "Redis", "Microsoft Graph", "ETL", "Figma", "GitLab", "LaunchDarkly", "Client Demos"]
     },
     {
       id: 2,
@@ -195,19 +196,31 @@ function Experience() {
           })}
         </div>
         <div className="skills-section">
-          <h3>Technical Skills</h3>
+          <h3>Skills</h3>
           <div className="skills-list">
             <div className="skill-category">
+              <h4>Customer & product:</h4>
+              <p>Requirements gathering, live demos, scoping ambiguous requests, UX design (Figma), stakeholder communication, documentation, UAT</p>
+            </div>
+            <div className="skill-category">
+              <h4>AI & application layer:</h4>
+              <p>LLM query processing, response streaming, skills and artifacts, Bedrock-backed models, AI coding agents, rendering and guardrails for model output</p>
+            </div>
+            <div className="skill-category">
+              <h4>Cloud & operations:</h4>
+              <p>AWS (ECS, S3, IAM, RDS, SQS, CloudWatch), Terraform, Docker, GitLab CI, LaunchDarkly, production debugging</p>
+            </div>
+            <div className="skill-category">
+              <h4>Data & integrations:</h4>
+              <p>ETL pipelines, SQL, Microsoft Graph API, REST APIs, Redis, PostgreSQL, MySQL, MongoDB, Pandas</p>
+            </div>
+            <div className="skill-category">
               <h4>Languages:</h4>
-              <p>Python, JavaScript, Java, SQL, TypeScript, C++, HTML/CSS, R</p>
+              <p>Python, JavaScript, TypeScript, PHP, Java, SQL, C++, HTML/CSS, R</p>
             </div>
             <div className="skill-category">
-              <h4>Frameworks & Libraries:</h4>
-              <p>React, Laravel, Angular, Node.js, React Native, TensorFlow, NumPy, Pandas</p>
-            </div>
-            <div className="skill-category">
-              <h4>Tools & Platforms:</h4>
-              <p>AWS, Terraform, Git, Docker, Redis, RESTful API, WebSockets, GCP, MongoDB, Figma, PostgreSQL, Xcode, Excel, Outlook, Tableau, Adobe Photoshop/Illustrator, LaunchDarkly</p>
+              <h4>Frameworks:</h4>
+              <p>Laravel, Angular, React, Node.js, React Native, Filament, TensorFlow, NumPy</p>
             </div>
           </div>
         </div>

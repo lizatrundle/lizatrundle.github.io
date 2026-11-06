@@ -51,8 +51,18 @@
     gap: 1rem;
   }
 
+  .nav {
+    padding: 1rem;
+  }
+
   .nav-links {
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
   }
 }
 

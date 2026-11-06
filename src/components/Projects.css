@@ -6,7 +6,7 @@
 
 .projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--primary-color);
   text-align: center;
   font-weight: 700;
@@ -135,3 +135,28 @@
   }
 }
 
+
+.projects-intro {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.project-label {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(56, 139, 253, 0.15);
+  color: #79b8ff;
+  border: 1px solid rgba(56, 139, 253, 0.4);
+}
+
+.project-card h4 {
+  padding-right: 5.5rem;
+}

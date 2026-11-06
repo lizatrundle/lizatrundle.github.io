@@ -75,3 +75,71 @@
   }
 }
 
+
+.eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.cta-row .resume-link {
+  margin: 0;
+}
+
+.resume-link.primary {
+  background: var(--primary-color);
+  color: var(--bg-primary);
+  border-color: var(--primary-color);
+}
+
+.resume-link.primary:hover {
+  background: var(--secondary-color);
+}
+
+.about-subhead {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.strengths-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.strength-card {
+  flex: 0 1 calc((100% - 1.5rem) / 2);
+  min-width: 260px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.strength-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.strength-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.about .intro + .intro { margin-top: 1rem; }

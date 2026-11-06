@@ -2,6 +2,16 @@ import React from 'react'
 import './Projects.css'
 
 function Projects() {
+  const personalProjects = [
+    {
+      id: 0,
+      title: "Personal Spending Analyzer",
+      description: "Pulls CSV exports from three banks and payment apps into one schema, with a React dashboard for category breakdowns, spending trends, and recategorizing transactions.",
+      technologies: ["Python", "Flask", "React", "ETL"],
+      link: "https://github.com/lizatrundle/spending-analyzer"
+    }
+  ]
+
   const academicProjects = [
     {
       id: 1,
@@ -47,15 +57,21 @@ function Projects() {
     }
   ]
 
+  const allProjects = [
+    ...personalProjects.map(p => ({ ...p, type: 'Personal' })),
+    ...academicProjects.map(p => ({ ...p, type: 'Academic' }))
+  ]
+
   return (
     <section id="projects" className="projects">
       <div className="container">
         <h2>Projects</h2>
         
-        <h3 className="project-category">Academic Projects and Coursework</h3>
+        <p className="projects-intro">Projects outside of work, including personal and academic</p>
         <div className="projects-grid">
-          {academicProjects.map(project => (
-            <div key={project.id} className="project-card">
+          {allProjects.map(project => (
+            <div key={`${project.type}-${project.id}`} className="project-card">
+              <span className={`project-label ${project.type.toLowerCase()}`}>{project.type}</span>
               <h4>{project.title}</h4>
               <p>{project.description}</p>
               <div className="technologies">
@@ -72,7 +88,7 @@ function Projects() {
 
         <div className="professional-note">
           <p>
-            <strong>Note:</strong> My professional projects are under confidentiality agreements and not available in public repositories. Details available in my experience section above.
+            <strong>Note:</strong> My professional projects are under confidentiality agreements and not available in public repositories. See Experience and Selected Work above for what I can share.
           </p>
         </div>
       </div>

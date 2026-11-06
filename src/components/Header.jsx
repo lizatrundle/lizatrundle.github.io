@@ -8,9 +8,10 @@ function Header() {
         <h1 className="logo">LIZA TRUNDLE</h1>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#beyond-code">Beyond Code</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
