@@ -1,26 +1,23 @@
 .work {
-  padding: 3rem 0;
-  position: relative;
+  margin-top: 4rem;
 }
 
-.work h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  text-align: center;
-  font-weight: 700;
+.work h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--secondary-color);
 }
 
 .work-intro {
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
-  text-align: center;
+  max-width: none;
+  margin: 0 0 1.5rem;
+  text-align: left;
   color: var(--text-secondary);
 }
 
 .work-list {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -42,8 +39,8 @@
 
 .work-cta {
   max-width: 800px;
-  margin: 2rem auto 0;
-  text-align: center;
+  margin: 2rem 0 0;
+  text-align: left;
   color: var(--text-secondary);
 }
 
@@ -51,6 +48,3 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-  .work h2 { font-size: 2rem; }
-}

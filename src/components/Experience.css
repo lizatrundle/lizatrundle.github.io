@@ -7,56 +7,16 @@
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: var(--primary-color);
-  text-align: center;
-  font-weight: 700;
+    font-weight: 700;
 }
 
-.skills-section {
-  margin-top: 4rem;
-}
-
-.skills-section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: var(--secondary-color);
-  text-align: center;
-}
-
-.skills-list {
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skill-category {
-  display: flex;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-
-.skill-category h4 {
-  font-size: 1.1rem;
-  color: var(--text-color);
-  font-weight: 600;
-  min-width: 180px;
-  margin: 0;
-}
-
-.skill-category p {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin: 0;
-}
 
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 1.5rem;
+  max-width: none;
+  margin: 0;
 }
 
 .experience-card {
@@ -78,7 +38,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--accent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -88,8 +48,8 @@
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--text-secondary);
+  transform: translateY(-2px);
+  border-color: var(--accent-border);
   box-shadow: var(--glow), var(--shadow);
   background: var(--bg-tertiary);
 }
@@ -212,7 +172,7 @@
 
 .architecture-tile-icon {
   font-size: 18px;
-  color: #6ea8fe;
+  color: var(--accent);
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -259,7 +219,7 @@
 
 .skill-tag:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: var(--text-secondary);
+  border-color: var(--accent-border);
   color: var(--text-color);
 }
 
@@ -293,19 +253,5 @@
     font-size: 0.75rem;
   }
 
-  .skill-category {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.3rem;
-  }
-
-  .skill-category h4 {
-    font-size: 1rem;
-    min-width: auto;
-  }
-
-  .skill-category p {
-    font-size: 0.95rem;
-  }
 }
 

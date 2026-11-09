@@ -21,9 +21,6 @@ function Education() {
       gpa: "3.9/4.0",
       description: "Semester Study Abroad: Saint Louis University-Madrid, Computer Science (Jan 2023 - May 2023)",
       activities: "Deans List, Kappa Alpha Theta sorority, Second Year Council, Teaching Assistant, Member of Women in Computing Sciences and Women in Cyber Security clubs",
-      projects: [
-        "Created an interactive Tableau visualization mapping marriage percentages by state and geography across the US"
-      ],
       coursework: [
         "Artificial Intelligence",
         "Computer Architecture",
@@ -99,13 +96,6 @@ function Education() {
                       <div className="activities">
                         <p className="activities-label">Activities:</p>
                         <p className="activities-text">{edu.activities}</p>
-                      </div>
-                    )}
-                    {edu.projects && (
-                      <div className="projects">
-                        <p className="activities-label">Notable Projects:</p>
-                        <p className="activities-text">{edu.projects[0]}</p>
-                        <a href="#projects" className="projects-link" style={{ display: 'inline-block', marginTop: '8px', color: '#7dd3fc', textDecoration: 'none', fontWeight: '500' }}>More linked projects above</a>
                       </div>
                     )}
                     {edu.coursework && (

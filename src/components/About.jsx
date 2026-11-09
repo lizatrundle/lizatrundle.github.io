@@ -8,15 +8,15 @@ const strengths = [
   },
   {
     title: 'Own it end to end',
-    text: 'Requirements, UX, architecture, build, release, and on-call, including UAT and production releases on AWS and Terraform.'
+    text: "From requirements and UX through architecture, release, and on-call. I run UAT and production releases on AWS and Terraform myself."
   },
   {
     title: 'Go beyond the ticket',
-    text: "I take on work without being asked, fix what's confusing or cluttered, and stay thorough. When I review teammates' merge requests, I suggest changes and commit examples."
+    text: "I take on work without being asked, fix what's confusing or cluttered, and stay thorough. When I review teammates' merge requests, I suggest specific changes with code examples."
   },
   {
     title: 'Use AI to my advantage',
-    text: 'I use agents to plan and phase large features and trace bugs, and I review everything, because I need to be able to explain and debug what I ship.'
+    text: "I use agents to plan large features in phases, trace bugs, and draft docs, but I review everything, because I need to be able to explain and debug what I ship."
   }
 ]
 
@@ -24,17 +24,13 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <img src="/profile-photo.jpg" alt="Liza Trundle" className="profile-photo" />
         <h2>About Me</h2>
         <p className="intro">
-          My name is Liza Trundle, and I'm a software developer currently working in New York City. Originally from Charlottesville, Virginia, I graduated from the University of Virginia in 2024 with a degree in Computer Science and a minor in Data Science, and I've spent the past two years as a full-stack software engineer building an internal AI platform and client-facing products. I approach software development with both creativity and dedication, and I'm at my best working directly with the people who use what I build: understanding the real problem, designing a solution, and owning it through release. I'm passionate about building technology that makes a real impact, and I thrive in collaborative environments where I can learn from others and contribute my own perspective. Please feel free to reach out—I'd love to connect!
+          I'm a full-stack software engineer based in New York. I graduated from the University of Virginia in 2024 (Computer Science, minor in Data Science) and have spent the past two years at FTI Consulting, building an internal AI platform and client-facing products. I'm happiest working close to the people who use what I build.
         </p>
-
-        <div className="cta-row">
-          <a href="/Resume2026.pdf" download="Liza_Trundle_Resume_2026.pdf" className="resume-link primary">
-            Download resume
-          </a>
-        </div>
+        <p className="intro">
+          Please feel free to reach out—I'd love to connect!
+        </p>
 
         <h3 className="about-subhead">How I work</h3>
         <div className="strengths-grid">
@@ -44,6 +40,36 @@ function About() {
               <p>{s.text}</p>
             </div>
           ))}
+        </div>
+
+        <div className="skills-section">
+          <h3>Skills</h3>
+          <div className="skills-list">
+            <div className="skill-category">
+              <h4>Customer & product:</h4>
+              <p>Requirements gathering, live demos, scoping ambiguous requests, UX design (Figma), stakeholder communication, documentation, UAT</p>
+            </div>
+            <div className="skill-category">
+              <h4>AI & application layer:</h4>
+              <p>LLM query processing, response streaming, skills and artifacts, Bedrock-backed models, AI coding agents, rendering and guardrails for model output</p>
+            </div>
+            <div className="skill-category">
+              <h4>Cloud & operations:</h4>
+              <p>AWS (ECS, S3, IAM, RDS, SQS, CloudWatch), Terraform, Docker, GitLab CI, LaunchDarkly, production debugging</p>
+            </div>
+            <div className="skill-category">
+              <h4>Data & integrations:</h4>
+              <p>ETL pipelines, SQL, Microsoft Graph API, REST APIs, Redis, PostgreSQL, MySQL, MongoDB, Pandas</p>
+            </div>
+            <div className="skill-category">
+              <h4>Languages:</h4>
+              <p>Python, JavaScript, TypeScript, PHP, Java, SQL, C++, HTML/CSS, R</p>
+            </div>
+            <div className="skill-category">
+              <h4>Frameworks:</h4>
+              <p>Laravel, Angular, React, Node.js, React Native, Filament, TensorFlow, NumPy</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -31,27 +31,21 @@ const work = [
 
 function Work() {
   return (
-    <section id="work" className="work">
-      <div className="container">
-        <h2>Selected Work</h2>
-        <p className="work-intro">
-          Selected large features I owned end to end.
-        </p>
+    <div id="work" className="work">
+      <h3>Selected Work</h3>
+      <p className="work-intro">
+        A brief summary of major features I've worked on at FTI Consulting (current role).
+      </p>
 
-        <ul className="work-list">
-          {work.map(w => (
-            <li key={w.title}>
-              <strong>{w.title}</strong>
-              <span>{w.text}</span>
-            </li>
-          ))}
-        </ul>
-
-        <p className="work-cta">
-          I'd love to go more in depth on any of these. <a href="mailto:lizatrundle@gmail.com">Get in touch</a>.
-        </p>
-      </div>
-    </section>
+      <ul className="work-list">
+        {work.map(w => (
+          <li key={w.title}>
+            <strong>{w.title}</strong>
+            <span>{w.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

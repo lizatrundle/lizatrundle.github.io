@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Work from './Work'
 import './Experience.css'
 
 function Experience() {
@@ -20,15 +21,13 @@ function Experience() {
       type: "Full-time",
       dates: "Aug 2024 - Present",
       location: "New York, New York, United States · On-site",
-      description: "Data & Analytics Software Solutions team. FTI's only internal engineering group (30 people), working like a startup: engineers work directly with stakeholders and own features from request to production.",
+      description: "Data & Analytics Software Solutions team: FTI's only internal engineering group (30 people), operating in a startup-similar environemtn.",
       responsibilities: [
-        "Part of a 30-person Agile team—FTI's only internal engineering group—building web apps for internal and external clients with strong autonomy and ownership",
-        "Build full-stack features across three projects at once: an internal AI platform used by 8,000+ employees, plus two external client applications",
+        "Full-stack developer across three projects at once: an internal AI platform used by 8,000+ employees, plus two external client applications",
         "Own features end to end: requirements, UX design, architecture, build, release, and post-launch support",
-        "Architected multi-tenancy layers enabling platform reuse across projects, with data isolation and governance built in",
-        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude: Skills, deep research, extended thinking, streaming responses (SSE relayed to the browser over WebSockets), observability messages, and progress-bar loading states",
-        "Serve as primary AWS point of contact — handle UAT/production deployments, debug through CloudWatch logs and direct database queries, and cover deployments for the London team across time zones",
-        "Conduct code reviews, lead client meetings and live demos with direct client contact, and serve on UX, documentation, and learning taskforces — designed 10+ Figma pages for a site redesign, run a biweekly internal team learning series"
+        "Helped build a modern AI platform with the features users expect from tools like ChatGPT and Claude: Skills, deep research, extended thinking, streaming responses (SSE over WebSockets), and observability messages. Architected multi-tenancy to reuse the platform across projects, with data isolation built in",
+        "Primary AWS point of contact: handle UAT/production deployments, debug through CloudWatch logs and direct database queries, and cover deployments for the London team across time zones",
+        "Lead client meetings and live demos, conduct code reviews, and serve on UX, documentation, and learning taskforces (designed 10+ Figma pages for a site redesign, run a biweekly team learning series)"
       ],
       architecture: [
         { label: "Backend", value: "Laravel (PHP), RESTful APIs, queued jobs", icon: "ti-server" },
@@ -39,12 +38,11 @@ function Experience() {
         { label: "Real-time", value: "WebSockets via Laravel Reverb, SQS-driven progress updates", icon: "ti-bolt" }
       ],
       certifications: [
-        "Led the Lightning Talks taskforce: organized speakers, introduced topics, and hosted sessions",
+        "Lead Lightning Talks taskforce—organized speakers, introduced new topics, and hosted sessions",
         "Professional development: Public Speaking, Project Management, and Figma courses",
         "How To Modernize Legacy UX (Without Breaking Everything)",
-        "AWS Skills Centers: Becoming an AI Practitioner, Part 1 - Introduction to AI"
-      ],
-      skills: ["Laravel", "Angular", "React", "SQL", "AWS", "Terraform", "Bedrock", "WebSockets", "SQS", "Redis", "Microsoft Graph", "ETL", "Figma", "GitLab", "LaunchDarkly", "Client Demos"]
+        "AWS Skills Centers: Becoming an AI Practitioner - Part 1 - Introduction to AI"
+      ]
     },
     {
       id: 2,
@@ -195,35 +193,7 @@ function Experience() {
             )
           })}
         </div>
-        <div className="skills-section">
-          <h3>Skills</h3>
-          <div className="skills-list">
-            <div className="skill-category">
-              <h4>Customer & product:</h4>
-              <p>Requirements gathering, live demos, scoping ambiguous requests, UX design (Figma), stakeholder communication, documentation, UAT</p>
-            </div>
-            <div className="skill-category">
-              <h4>AI & application layer:</h4>
-              <p>LLM query processing, response streaming, skills and artifacts, Bedrock-backed models, AI coding agents, rendering and guardrails for model output</p>
-            </div>
-            <div className="skill-category">
-              <h4>Cloud & operations:</h4>
-              <p>AWS (ECS, S3, IAM, RDS, SQS, CloudWatch), Terraform, Docker, GitLab CI, LaunchDarkly, production debugging</p>
-            </div>
-            <div className="skill-category">
-              <h4>Data & integrations:</h4>
-              <p>ETL pipelines, SQL, Microsoft Graph API, REST APIs, Redis, PostgreSQL, MySQL, MongoDB, Pandas</p>
-            </div>
-            <div className="skill-category">
-              <h4>Languages:</h4>
-              <p>Python, JavaScript, TypeScript, PHP, Java, SQL, C++, HTML/CSS, R</p>
-            </div>
-            <div className="skill-category">
-              <h4>Frameworks:</h4>
-              <p>Laravel, Angular, React, Node.js, React Native, Filament, TensorFlow, NumPy</p>
-            </div>
-          </div>
-        </div>
+        <Work />
       </div>
     </section>
   )

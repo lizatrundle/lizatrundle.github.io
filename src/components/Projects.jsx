@@ -54,6 +54,12 @@ function Projects() {
       description: "Artificial Intelligence projects including search algorithms, machine learning, and intelligent agents",
       technologies: ["Python"],
       link: "https://github.com/lizatrundle/Artificial-Intelligence"
+    },
+    {
+      id: 7,
+      title: "US Marriage Rates Visualization",
+      description: "Interactive Tableau visualization mapping marriage percentages by state and geography across the US",
+      technologies: ["Tableau", "Data Visualization"]
     }
   ]
 

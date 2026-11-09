@@ -8,13 +8,12 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
-  text-align: center;
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .contact-box {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   padding: 2.5rem;
@@ -31,23 +30,23 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--accent);
 }
 
 .contact-box:hover {
-  border-color: var(--text-secondary);
+  border-color: var(--accent-border);
   box-shadow: var(--glow), var(--shadow);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
 }
 
 .contact-item {
-  text-align: center;
+  text-align: left;
 }
 
 .contact-item h3 {
@@ -68,7 +67,7 @@
 
 .contact-item a {
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: var(--accent);
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
@@ -76,7 +75,6 @@
 
 .contact-item a:hover {
   color: var(--text-color);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
 

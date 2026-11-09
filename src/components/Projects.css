@@ -8,14 +8,13 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
-  text-align: center;
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .project-category {
   font-size: 1.8rem;
   color: var(--secondary-color);
-  text-align: center;
+  text-align: left;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 600;
@@ -44,7 +43,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--accent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -54,8 +53,8 @@
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--text-secondary);
+  transform: translateY(-3px);
+  border-color: var(--accent-border);
   box-shadow: var(--glow), var(--shadow);
   background: var(--bg-tertiary);
 }
@@ -70,7 +69,7 @@
 .project-link {
   display: inline-block;
   margin-top: 0.5rem;
-  color: var(--primary-color);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -79,7 +78,6 @@
 
 .project-link:hover {
   color: var(--text-color);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transform: translateX(5px);
 }
 
@@ -107,10 +105,7 @@
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
 }
 
 .professional-note p {
@@ -137,7 +132,7 @@
 
 
 .projects-intro {
-  text-align: center;
+  text-align: left;
   color: var(--text-secondary);
   margin-bottom: 2.5rem;
 }
@@ -152,9 +147,9 @@
   text-transform: uppercase;
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
-  background: rgba(56, 139, 253, 0.15);
-  color: #79b8ff;
-  border: 1px solid rgba(56, 139, 253, 0.4);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
 }
 
 .project-card h4 {
